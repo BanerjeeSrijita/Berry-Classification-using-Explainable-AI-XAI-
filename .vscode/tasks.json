@@ -1,0 +1,78 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Berry: Create venv",
+      "type": "shell",
+      "command": "python3 -m venv .venv",
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Berry: Install requirements",
+      "type": "shell",
+      "command": ".venv/bin/python -m pip install -r requirements.txt",
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Berry: Validate",
+      "type": "shell",
+      "command": ".venv/bin/python scripts/validate.py --dataset-root dataset",
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Berry: Run notebook",
+      "type": "shell",
+      "command": ".venv/bin/python scripts/run_notebook.py --dataset-root dataset --output-dir outputs/reference_notebook",
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Berry: Train",
+      "type": "shell",
+      "command": ".venv/bin/python scripts/train.py --dataset-root dataset --model proposed --output-dir outputs/paper_proposed",
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Berry: Evaluate",
+      "type": "shell",
+      "command": ".venv/bin/python scripts/evaluate.py --run-dir outputs/paper_proposed",
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Berry: Grad-CAM",
+      "type": "shell",
+      "command": ".venv/bin/python scripts/gradcam.py --model-path outputs/paper_proposed/best_model.h5 --image-path dataset/blueberry/0.jpg --output-path outputs/paper_proposed/gradcam_blueberry_0.png",
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Berry: Full paper verification",
+      "dependsOn": [
+        "Berry: Validate",
+        "Berry: Train",
+        "Berry: Evaluate"
+      ],
+      "dependsOrder": "sequence",
+      "problemMatcher": []
+    }
+  ]
+}
