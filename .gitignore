@@ -1,3 +1,13 @@
+outputs/*
+!outputs/.gitkeep
+!outputs/paper_proposed/
+outputs/paper_proposed/*
+!outputs/paper_proposed/confusion_matrix.png
+!outputs/paper_proposed/training_curves.png
+!outputs/paper_proposed/gradcam_tayberry_1.png
+!outputs/paper_proposed/metrics.json
+!outputs/paper_proposed/classification_report.txt
+
 __pycache__/
 *.py[cod]
 .pytest_cache/
