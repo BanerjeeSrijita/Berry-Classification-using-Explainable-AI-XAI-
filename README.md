@@ -204,14 +204,6 @@ python scripts/gradcam.py \
 - `scripts/train.py` is the main command-line version of the notebook workflow.
 - `run_notebook.py` is not required for the main paper results.
 
-## GitHub Notes
-
-Before publishing or sharing:
-
-- keep the script names as they are in `scripts/`
-- keep the citation section in this README
-- do not commit private or temporary local files
-
 ## References
 
 - Springer chapter: [10.1007/978-3-032-07336-5_1](https://doi.org/10.1007/978-3-032-07336-5_1)
