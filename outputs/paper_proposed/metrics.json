@@ -1,0 +1,8 @@
+{
+  "evaluation_split": "validation",
+  "validation_loss": 0.36235344409942627,
+  "validation_accuracy": 0.890656054019928,
+  "macro_precision": 0.8927149112631427,
+  "macro_recall": 0.8917565531258761,
+  "macro_f1_score": 0.8874833232919761
+}
