@@ -143,13 +143,13 @@ Example visual outputs from the trained workflow are shown below.
 
 ![Training Curves](docs/images/training_curves.png)
 
-### Confusion Matrix
+### Grad-CAM Visualization
 
-![Confusion Matrix](docs/images/confusion_matrix.png)
+| Original | Grad-CAM: Tayberry |
+| --- | --- |
+| ![Original Tayberry](docs/images/samples/tayberry.jpg) | ![Grad-CAM Tayberry](docs/images/gradcam_tayberry_1.png) |
 
-### Grad-CAM Example
-
-![Grad-CAM Example](docs/images/gradcam_tayberry_1.png)
+*Grad-CAM visualization highlighting the berry regions that contribute most strongly to the model prediction.*
 
 ## Outputs
 
@@ -158,7 +158,6 @@ Running the training workflow creates artifacts under `outputs/paper_proposed/`,
 - trained model
 - metrics
 - classification report
-- confusion matrix
 - training curves
 - prediction CSV
 - Grad-CAM image
