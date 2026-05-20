@@ -1,13 +1,3 @@
-outputs/*
-!outputs/.gitkeep
-!outputs/paper_proposed/
-outputs/paper_proposed/*
-!outputs/paper_proposed/confusion_matrix.png
-!outputs/paper_proposed/training_curves.png
-!outputs/paper_proposed/gradcam_tayberry_1.png
-!outputs/paper_proposed/metrics.json
-!outputs/paper_proposed/classification_report.txt
-
 __pycache__/
 *.py[cod]
 .pytest_cache/
@@ -20,9 +10,6 @@ __pycache__/
 venv/
 env/
 
-outputs/*
-!outputs/.gitkeep
-
 artifacts/
 checkpoints/
 models/
@@ -33,4 +20,13 @@ cnn_visual_block.png
 *.h5
 
 978-3-032-07336-5.pdf
-dataset/
+
+outputs/*
+!outputs/.gitkeep
+!outputs/paper_proposed/
+outputs/paper_proposed/*
+!outputs/paper_proposed/confusion_matrix.png
+!outputs/paper_proposed/training_curves.png
+!outputs/paper_proposed/gradcam_tayberry_1.png
+!outputs/paper_proposed/metrics.json
+!outputs/paper_proposed/classification_report.txt

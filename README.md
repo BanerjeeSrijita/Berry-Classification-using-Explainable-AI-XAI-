@@ -44,9 +44,17 @@ dataset/
 └── white mulberry/
 ```
 
+Additional dataset details are provided in [dataset/README.md](dataset/README.md).
+
 ### Dataset Preview
 
 ![Berry Dataset Preview](docs/images/berry_dataset_preview.png)
+
+### Sample Berry Images
+
+| Tayberry | Wineberry | Blackberry | Blueberry | White Mulberry |
+| --- | --- | --- | --- | --- |
+| ![Tayberry](docs/images/samples/tayberry.jpg) | ![Wineberry](docs/images/samples/wineberry.jpg) | ![Blackberry](docs/images/samples/blackberry.jpg) | ![Blueberry](docs/images/samples/blueberry.jpg) | ![White Mulberry](docs/images/samples/white_mulberry.jpg) |
 
 ## Repository Structure
 
