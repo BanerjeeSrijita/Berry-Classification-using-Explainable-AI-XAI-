@@ -44,7 +44,7 @@ dataset/
 └── white mulberry/
 ```
 
-Additional dataset details are provided in [dataset/README.md](dataset/README.md).
+Full dataset details, class folders, and citation information are available in [dataset/README.md](dataset/README.md).
 
 ### Dataset Preview
 
